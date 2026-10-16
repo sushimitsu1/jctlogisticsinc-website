@@ -7,9 +7,9 @@
 <meta name="description" content="JCT Logistics Inc provides warehousing, Amazon fulfillment, distribution, cross-docking, pick &amp; pack, and kitting from Ontario, CA, serving Los Angeles and Southern California since 2015.">
 <link rel="canonical" href="https://www.jctlogisticsinc.com/">
 <meta name="theme-color" content="#0b1f3a">
-<link rel="icon" href="/assets/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
-<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="JCT Logistics Inc">
 <meta property="og:title" content="JCT Logistics Inc | Warehousing &amp; Fulfillment in Ontario, CA">
@@ -55,6 +55,7 @@ section{padding:96px 0}
 header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .nav .container{display:flex;align-items:center;justify-content:space-between;height:74px}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;color:var(--navy);letter-spacing:-.02em}
+.logo-img{height:44px;width:auto;display:block}
 .logo-mark{width:38px;height:38px;border-radius:9px;background:var(--navy);display:grid;place-items:center}
 .logo small{display:block;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-top:-3px}
 .nav ul{display:flex;gap:30px;list-style:none;font-weight:600;font-size:15px;color:var(--navy-2)}
@@ -195,8 +196,8 @@ fieldset.svc{border:0;padding:0;margin:0 0 8px}fieldset.svc legend{font-weight:6
 </div></div>
 
 <header class="nav"><div class="container">
-  <a href="/" class="logo">
-    <span class="logo-mark"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-5 9 5v11H3z"/><path d="M8 20v-6h8v6"/></svg></span>
+  <a href="index.html" class="logo">
+    <img class="logo-img" src="assets/logo-mark.png" width="85" height="44" alt="JCT Logistics Inc logo">
     <span style="white-space:nowrap">JCT Logistics Inc<small>Since 2015</small></span>
   </a>
   <ul>
@@ -359,9 +360,11 @@ fieldset.svc{border:0;padding:0;margin:0 0 8px}fieldset.svc legend{font-weight:6
       <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0b1f3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span><div><b>Hours</b><span>Monday–Friday, 8:00 AM – 4:30 PM</span></div></li>
     </ul>
   </div>
-  <form class="card" name="quote" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="company-website">
-    <input type="hidden" name="form-name" value="quote">
-    <p class="hp" aria-hidden="true"><label>Leave this empty: <input name="company-website" tabindex="-1" autocomplete="off"></label></p>
+  <form class="card" name="quote" method="POST" action="https://formsubmit.co/info@jctlogisticsinc.com">
+    <input type="hidden" name="_subject" value="New quote request - jctlogisticsinc.com">
+    <input type="hidden" name="_next" value="https://www.jctlogisticsinc.com/thanks.html">
+    <input type="hidden" name="_template" value="table">
+    <p class="hp" aria-hidden="true"><label>Leave this empty: <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
     <div class="grid2">
       <div class="field"><label for="n">Name</label><input id="n" name="name" autocomplete="name" placeholder="Jane Smith" required></div>
       <div class="field"><label for="c">Company</label><input id="c" name="company" autocomplete="organization" placeholder="Company name"></div>
@@ -381,7 +384,7 @@ fieldset.svc{border:0;padding:0;margin:0 0 8px}fieldset.svc legend{font-weight:6
 <footer><div class="container">
   <div class="foot">
     <div>
-      <a href="/" class="logo" style="margin-bottom:14px"><span class="logo-mark" style="background:#132d52"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-5 9 5v11H3z"/><path d="M8 20v-6h8v6"/></svg></span><span>JCT Logistics Inc</span></a>
+      <a href="index.html" class="logo" style="margin-bottom:14px"><span class="logo-mark" style="background:#132d52"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-5 9 5v11H3z"/><path d="M8 20v-6h8v6"/></svg></span><span>JCT Logistics Inc</span></a>
       <p>Warehousing, fulfillment and distribution with personal service, from Ontario, CA, serving Los Angeles and Southern California since 2015.</p>
     </div>
     <div><h4>Services</h4><ul><li><a href="#services">Amazon Fulfillment</a></li><li><a href="#services">Transportation Management</a></li><li><a href="#services">Distribution</a></li><li><a href="#services">Cross-Docking</a></li><li><a href="#services">Pick &amp; Pack</a></li><li><a href="#services">Kitting &amp; Assembly</a></li></ul></div>
