@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Design Preview | JCT Logistics Inc</title>
+<meta name="description" content="Design preview for JCT Logistics Inc: warehousing, Amazon fulfillment, distribution, cross-docking, pick &amp; pack and kitting from Ontario, CA, serving businesses nationwide since 2015.">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="../assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.className+=' js';</script>
+<style>
+:root{
+  --ink:#0a0a0a; --ink-2:#1a1a1a; --ink-3:#2a2a2a;
+  --y:#f0b429; --y-d:#e8a317; --y-l:#fdf3d9;
+  --paper:#f6f5f1; --line:#e7e4dc; --text:#1f1f1f; --muted:#5f5f5f; --white:#fff;
+  --display:"Barlow Condensed","Barlow",system-ui,sans-serif;
+  --r:16px;
+  --hazard:repeating-linear-gradient(-45deg,var(--y) 0 14px,var(--ink) 14px 28px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:Barlow,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--text);background:var(--white);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+h1,h2,h3,h4{font-family:var(--display);color:var(--ink);line-height:1;letter-spacing:.005em}
+h2{font-size:clamp(38px,4.8vw,64px);font-weight:800;text-transform:uppercase}
+.kicker{display:inline-flex;align-items:center;gap:12px;font-family:var(--display);font-size:15px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);margin-bottom:18px}
+.kicker::before{content:"";width:34px;height:4px;background:var(--y)}
+.lead{font-size:19px;color:var(--muted);max-width:620px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:.06em;text-transform:uppercase;padding:14px 28px;border-radius:6px;border:2px solid transparent;cursor:pointer;transition:background .2s,border-color .2s,color .2s,transform .2s,box-shadow .2s;white-space:nowrap}
+.btn svg{transition:transform .2s}
+.btn:hover svg.arr{transform:translateX(4px)}
+.btn-y{background:var(--y);color:var(--ink);box-shadow:0 12px 26px -12px rgba(240,180,41,.8)}
+.btn-y:hover{background:var(--y-d);transform:translateY(-1px)}
+.btn-glass{color:#fff;border-color:rgba(255,255,255,.5);background:rgba(255,255,255,.04)}
+.btn-glass:hover{background:#fff;color:var(--ink);border-color:#fff}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--ink-3)}
+
+/* Header */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.98);backdrop-filter:blur(10px);border-bottom:1px solid #ececec;transition:box-shadow .25s}
+.hdr.scrolled{box-shadow:0 12px 30px -20px rgba(0,0,0,.45)}
+.hdr .wrap{display:flex;align-items:center;gap:28px;height:80px}
+.brand{display:flex;align-items:center;flex:none}
+.brand img{height:52px;width:auto}
+.menu{display:flex;gap:30px;list-style:none;margin-left:auto;font-family:var(--display);font-weight:700;font-size:17px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink)}
+.menu a{position:relative;padding:6px 0}
+.menu a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:3px;background:var(--y);transition:right .25s}
+.menu a:hover::after{right:0}
+.hdr-actions{display:flex;align-items:center;gap:10px}
+.hdr .btn{padding:10px 18px;font-size:16px}
+.btn-portal{background:var(--ink);color:#fff}
+.btn-portal svg{color:var(--y)}
+.btn-portal:hover{background:var(--ink-3)}
+.burger{display:none;width:44px;height:44px;border-radius:6px;border:1px solid #e3e3e3;background:#fff;cursor:pointer;place-items:center}
+.mnav{display:none}
+
+/* Hero */
+.hero{position:relative;min-height:min(88vh,840px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--ink) url(../assets/hero-poster.jpg) center/cover no-repeat;isolation:isolate}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:grayscale(.35) contrast(1.05)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  linear-gradient(90deg,rgba(10,10,10,.95) 0%,rgba(10,10,10,.82) 45%,rgba(10,10,10,.4) 100%),
+  linear-gradient(0deg,rgba(10,10,10,.92) 0%,rgba(10,10,10,0) 50%)}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;background:var(--hazard)}
+.hero .wrap{width:100%;padding-top:120px;padding-bottom:90px}
+.hero .kicker{color:#fff}
+.hero h1{color:#fff;font-size:clamp(54px,8.4vw,118px);font-weight:800;text-transform:uppercase;line-height:.92;letter-spacing:-.005em;max-width:980px;margin-bottom:30px}
+.hero h1 span{color:var(--y)}
+.hero p{font-size:clamp(18px,1.6vw,21px);color:#d6d6d6;max-width:640px;margin-bottom:38px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-foot{display:flex;flex-wrap:wrap;gap:12px 36px;margin-top:56px;padding-top:24px;border-top:1px solid rgba(255,255,255,.16);font-family:var(--display);font-weight:600;font-size:16px;letter-spacing:.1em;text-transform:uppercase;color:#cfcfcf}
+.hero-foot div{display:flex;align-items:center;gap:10px}
+.hero-foot i{width:10px;height:10px;background:var(--y);transform:rotate(45deg)}
+
+/* Icon strip */
+.strip{background:var(--ink);color:#fff}
+.strip ul{list-style:none;display:grid;grid-template-columns:repeat(6,1fr)}
+.strip li a{display:flex;flex-direction:column;align-items:center;gap:14px;padding:32px 10px;text-align:center;font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:.08em;text-transform:uppercase;border-right:1px solid rgba(255,255,255,.1);transition:background .2s,color .2s}
+.strip li:last-child a{border-right:0}
+.strip li a:hover{background:var(--ink-2);color:var(--y)}
+.strip .ic{width:54px;height:54px;border-radius:10px;display:grid;place-items:center;border:1.5px solid rgba(240,180,41,.55);color:var(--y);transition:background .25s,color .25s,transform .25s}
+.strip li a:hover .ic{background:var(--y);color:var(--ink);transform:translateY(-3px)}
+
+/* Intro */
+.intro{padding:120px 0 40px}
+.intro .wrap{display:grid;grid-template-columns:1fr 1.25fr;gap:64px;align-items:start}
+.intro .body p{font-size:20px;color:var(--muted);margin-bottom:18px}
+.intro .body p strong{color:var(--ink);font-weight:600;box-shadow:inset 0 -.42em 0 var(--y-l)}
+
+/* Splits */
+.splits{padding:50px 0 120px}
+.split{display:grid;grid-template-columns:1.05fr 1fr;gap:72px;align-items:center;padding:52px 0}
+.split.flip .media{order:2}
+.media{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:5/4;box-shadow:0 34px 60px -32px rgba(0,0,0,.55)}
+.media img{width:100%;height:100%;object-fit:cover;transform:scale(1.05);transition:transform 1.4s ease}
+.split.in .media img{transform:scale(1)}
+.media::before{content:"";position:absolute;left:0;top:0;bottom:0;width:8px;background:var(--y);z-index:2}
+.split.flip .media::before{left:auto;right:0}
+.media::after{content:"";position:absolute;inset:0;background:linear-gradient(200deg,rgba(0,0,0,0) 40%,rgba(10,10,10,.6))}
+.media .badge{position:absolute;left:26px;bottom:24px;z-index:3;display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#fff;font-family:var(--display);font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:15px;padding:9px 16px 9px 9px;border-radius:6px}
+.media .badge b{padding:3px 8px;border-radius:4px;background:var(--y);color:var(--ink);font-size:14px}
+.split .num{font-family:var(--display);font-weight:700;font-size:15px;color:var(--y-d);letter-spacing:.18em;margin-bottom:14px;display:block}
+.split h3{font-size:clamp(34px,3.6vw,50px);font-weight:800;text-transform:uppercase;margin-bottom:20px}
+.split p{color:var(--muted);font-size:18px;margin-bottom:26px;max-width:520px}
+.ticks{list-style:none;display:grid;gap:12px;margin-bottom:32px}
+.ticks li{display:flex;gap:12px;align-items:center;font-weight:600;color:var(--ink)}
+.ticks li::before{content:"";flex:none;width:22px;height:22px;border-radius:4px;background:var(--y) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230a0a0a' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/13px no-repeat}
+.textlink{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);border-bottom:3px solid var(--y);padding-bottom:3px}
+.textlink:hover{color:var(--y-d)}
+
+/* Services rows */
+.services{background:var(--paper);padding:120px 0}
+.svc-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:56px;flex-wrap:wrap}
+.rows{border-top:2px solid var(--ink)}
+.row{display:grid;grid-template-columns:130px 1fr 1.1fr 56px;gap:32px;align-items:center;padding:30px 12px;border-bottom:1px solid #d9d5cb;position:relative;transition:background .25s}
+.row::before{content:"";position:absolute;left:0;top:0;bottom:0;width:0;background:var(--y);transition:width .3s}
+.row:hover{background:#fff}
+.row:hover::before{width:6px}
+.row .n{font-family:var(--display);font-weight:800;font-size:72px;line-height:1;color:transparent;-webkit-text-stroke:1.5px #b9b3a6;transition:color .25s,-webkit-text-stroke-color .25s}
+.row:hover .n{color:var(--y);-webkit-text-stroke-color:var(--y-d)}
+.row h3{font-size:clamp(28px,2.6vw,36px);font-weight:800;text-transform:uppercase}
+.row h3 small{display:block;font-family:Barlow,sans-serif;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--y-d);margin-bottom:6px}
+.row p{color:var(--muted);font-size:17px}
+.row .go{width:52px;height:52px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center;color:var(--ink);transition:.25s}
+.row:hover .go{background:var(--ink);color:var(--y);transform:rotate(-45deg)}
+
+/* Why (dark) */
+.why{background:var(--ink);color:#fff;padding:120px 0;position:relative;overflow:hidden}
+.why::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse at 80% 0%,#000 10%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 80% 0%,#000 10%,transparent 70%)}
+.why::after{content:"";position:absolute;width:640px;height:640px;right:-220px;top:-260px;border-radius:50%;background:radial-gradient(circle,rgba(240,180,41,.22),rgba(240,180,41,0) 70%)}
+.why .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1.15fr;gap:80px;align-items:start}
+.why h2{color:#fff}
+.why h2 span{color:var(--y)}
+.why .kicker{color:#fff}
+.why .lead{color:#b5b5b5;margin-top:24px}
+.why .stick{position:sticky;top:120px}
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pillar{background:var(--ink-2);border:1px solid #2a2a2a;border-radius:var(--r);padding:30px 28px;transition:border-color .25s,transform .25s}
+.pillar:hover{border-color:var(--y);transform:translateY(-3px)}
+.pillar .pi{width:48px;height:48px;border-radius:10px;display:grid;place-items:center;background:var(--y);color:var(--ink);margin-bottom:20px}
+.pillar h3{color:#fff;font-size:24px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;margin-bottom:10px}
+.pillar p{color:#a9a9a9;font-size:16px}
+
+/* Process */
+.process{padding:120px 0}
+.process .head{text-align:center;max-width:760px;margin:0 auto 70px}
+.process .head .lead{margin:16px auto 0}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;position:relative}
+.timeline::before{content:"";position:absolute;top:33px;left:12%;right:12%;height:4px;background:repeating-linear-gradient(90deg,var(--ink) 0 18px,var(--y) 18px 36px);opacity:.9}
+.stp{text-align:center;position:relative}
+.stp .dot{width:68px;height:68px;margin:0 auto 26px;border-radius:50%;background:var(--ink);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:30px;color:var(--y);position:relative;z-index:1;box-shadow:0 0 0 8px #fff}
+.stp:last-child .dot{background:var(--y);color:var(--ink)}
+.stp h3{font-size:26px;font-weight:800;text-transform:uppercase;margin-bottom:10px}
+.stp p{color:var(--muted);font-size:16.5px;max-width:260px;margin:0 auto}
+
+/* Quote */
+.quote{padding:0 0 120px}
+.quote-box{display:grid;grid-template-columns:.9fr 1.1fr;border-radius:18px;overflow:hidden;box-shadow:0 40px 80px -40px rgba(0,0,0,.55);border:1px solid #e6e6e6}
+.qside{background:var(--ink-2);color:#fff;padding:60px 48px 56px;position:relative;overflow:hidden}
+.qside::before{content:"";position:absolute;left:0;right:0;top:0;height:10px;background:var(--hazard)}
+.qside::after{content:"";position:absolute;right:-110px;bottom:-110px;width:300px;height:300px;border-radius:50%;border:44px solid rgba(240,180,41,.08)}
+.qside h2{color:#fff;font-size:clamp(38px,3.8vw,54px);margin-bottom:16px}
+.qside .kicker{color:#fff}
+.qside > p{color:#c4c4c4;font-size:18px;margin-bottom:36px}
+.clist{list-style:none;display:grid;gap:22px;position:relative;z-index:1}
+.clist li{display:flex;gap:16px;align-items:flex-start}
+.clist .ci{flex:none;width:44px;height:44px;border-radius:10px;background:rgba(240,180,41,.12);border:1px solid rgba(240,180,41,.4);display:grid;place-items:center}
+.clist b{display:block;font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--y);margin-bottom:2px}
+.clist span,.clist a{color:#fff;font-size:17px}
+.clist a:hover{color:var(--y)}
+form.qform{background:#fff;padding:56px 48px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}
+.f{display:flex;flex-direction:column;gap:7px;margin-bottom:18px}
+.f label,.f legend{font-family:var(--display);font-size:15px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink)}
+.f input,.f select,.f textarea{font:inherit;font-size:16px;padding:13px 16px;border:1.5px solid #e0e0e0;border-radius:8px;background:#fafafa;color:var(--text);transition:border-color .2s,background .2s,box-shadow .2s}
+.f input:focus,.f select:focus,.f textarea:focus{outline:0;border-color:var(--ink);background:#fff;box-shadow:0 0 0 4px rgba(240,180,41,.35)}
+fieldset.f{border:0;padding:0}
+fieldset.f legend{margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative;cursor:pointer}
+.chips input{position:absolute;opacity:0;width:1px;height:1px}
+.chips span{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border:1.5px solid #e0e0e0;border-radius:999px;font-size:15px;font-weight:500;color:var(--ink);background:#fff;transition:.2s}
+.chips span::before{content:"";width:14px;height:14px;border-radius:4px;border:1.5px solid #b5b5b5;transition:.2s}
+.chips label:hover span{border-color:var(--ink)}
+.chips input:checked + span{border-color:var(--ink);background:var(--ink);color:#fff}
+.chips input:checked + span::before{background:var(--y) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230a0a0a' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/10px no-repeat;border-color:var(--y)}
+.chips input:focus-visible + span{box-shadow:0 0 0 4px rgba(240,180,41,.4)}
+form.qform .btn{width:100%;font-size:19px;padding:17px 26px;margin-top:6px}
+.fine{font-size:14px;color:var(--muted);margin-top:14px;text-align:center}
+.hp{position:absolute;left:-9999px}
+
+/* CTA band */
+.cta{position:relative;overflow:hidden;background:var(--y);color:var(--ink)}
+.cta::before{content:"";position:absolute;top:0;bottom:0;right:0;width:34%;background:var(--hazard);opacity:.95;clip-path:polygon(18% 0,100% 0,100% 100%,0 100%)}
+.cta .wrap{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:40px;padding-top:84px;padding-bottom:84px;flex-wrap:wrap}
+.cta h2{color:var(--ink);font-size:clamp(40px,4.6vw,62px);max-width:640px}
+.cta p{color:#2b2b2b;font-size:19px;margin-top:14px;max-width:560px;font-weight:500}
+.cta-actions{display:flex;gap:14px;flex-wrap:wrap;padding:18px;background:var(--ink);border-radius:12px}
+.cta .btn-glass{border-color:rgba(255,255,255,.35)}
+.btn-white{background:var(--y);color:var(--ink)}
+.btn-white:hover{background:#fff}
+
+/* Footer */
+footer{background:var(--ink);color:#a3a3a3;font-size:16px;border-top:4px solid var(--y)}
+.ft{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;gap:48px;padding:80px 0 56px}
+.ft-logo{display:inline-block;background:#fff;border-radius:12px;padding:12px 16px;margin-bottom:22px}
+.ft-logo img{height:56px;width:auto}
+footer h4{color:#fff;font-size:18px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px}
+footer ul{list-style:none;display:grid;gap:10px}
+footer a:hover{color:var(--y)}
+.ft-portal{margin-top:22px}
+.ft-bottom{border-top:1px solid rgba(255,255,255,.1);padding:24px 0 30px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px}
+
+/* Reveal */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.d1{transition-delay:.08s}.js .rv.d2{transition-delay:.16s}.js .rv.d3{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}.hero video{display:none}html{scroll-behavior:auto}}
+
+/* Responsive */
+@media (max-width:1080px){
+  .menu{gap:20px;font-size:16px}
+  .row{grid-template-columns:96px 1fr 1fr 52px;gap:24px}
+  .row .n{font-size:56px}
+  .why .wrap{grid-template-columns:1fr;gap:48px}
+  .why .stick{position:static}
+  .strip ul{grid-template-columns:repeat(3,1fr)}
+  .strip li:nth-child(3) a{border-right:0}
+  .strip li:nth-child(-n+3) a{border-bottom:1px solid rgba(255,255,255,.1)}
+}
+@media (max-width:920px){
+  .menu,.hdr .btn-y{display:none}
+  .hdr-actions{margin-left:auto}
+  .burger{display:grid}
+  .mnav{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:4px solid var(--y);box-shadow:0 20px 30px -20px rgba(0,0,0,.4);padding:6px 28px 22px}
+  .hdr.open .mnav{display:block}
+  .mnav a{display:block;padding:14px 0;font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);border-bottom:1px solid #eee}
+  .mnav .btn{display:flex;margin-top:16px;border-bottom:0}
+  .intro .wrap,.split,.quote-box{grid-template-columns:1fr}
+  .intro .wrap{gap:24px}
+  .split{gap:36px;padding:36px 0}
+  .split.flip .media{order:0}
+  .split.flip .media::before{right:auto;left:0}
+  .row{grid-template-columns:76px 1fr 48px;gap:6px 20px;padding:26px 8px}
+  .row .n{font-size:46px;grid-row:span 2;align-self:start}
+  .row p{grid-column:2}
+  .row .go{grid-column:3;grid-row:1 / span 2;width:46px;height:46px}
+  .timeline{grid-template-columns:1fr 1fr;row-gap:48px}
+  .timeline::before{display:none}
+  .ft{grid-template-columns:1fr 1fr}
+  .cta::before{width:22%}
+}
+@media (max-width:600px){
+  .wrap{padding:0 20px}
+  .br-d{display:none}
+  .hdr .wrap{height:68px;gap:12px}
+  .brand img{height:42px}
+  .hdr .btn-portal{padding:9px 12px;font-size:14.5px;gap:7px;letter-spacing:.04em}
+  .burger{width:42px;height:42px}
+  .hero{min-height:auto}
+  .hero .wrap{padding-top:84px;padding-bottom:60px}
+  .hero h1{font-size:56px}
+  .hero p{font-size:17.5px}
+  .hero-ctas .btn{width:100%}
+  .hero-foot{margin-top:40px;gap:12px;font-size:15px}
+  .strip ul{grid-template-columns:repeat(2,1fr)}
+  .strip li a{padding:24px 8px;border-bottom:1px solid rgba(255,255,255,.1);font-size:15px}
+  .strip li:nth-child(3) a{border-right:1px solid rgba(255,255,255,.1)}
+  .strip li:nth-child(even) a{border-right:0}
+  .strip li:nth-last-child(-n+2) a{border-bottom:0}
+  .intro{padding:80px 0 10px}
+  .intro .body p{font-size:18px}
+  .splits{padding:30px 0 80px}
+  .media{aspect-ratio:4/3}
+  .services,.why,.process{padding:84px 0}
+  .svc-head{margin-bottom:36px}
+  .row{grid-template-columns:54px 1fr 40px;gap:4px 14px}
+  .row .n{font-size:38px}
+  .row .go{width:40px;height:40px}
+  .row p{font-size:16px}
+  .pillars{grid-template-columns:1fr}
+  .timeline{grid-template-columns:1fr;row-gap:36px}
+  .quote{padding-bottom:84px}
+  .quote .wrap{padding:0 12px}
+  .qside,form.qform{padding:44px 24px 40px}
+  .g2{grid-template-columns:1fr}
+  .cta::before{display:none}
+  .cta{background:var(--y) linear-gradient(var(--y),var(--y)) padding-box}
+  .cta .wrap{padding-top:64px;padding-bottom:64px;border-top:0}
+  .cta::after{content:"";position:absolute;left:0;right:0;top:0;height:10px;background:var(--hazard)}
+  .cta-actions{width:100%;flex-direction:column}
+  .cta-actions .btn{width:100%}
+  .ft{grid-template-columns:1fr;gap:36px;padding:64px 0 40px}
+}
+</style>
+</head>
+<body>
+
+<header class="hdr"><div class="wrap">
+  <a href="#top" class="brand" aria-label="JCT Logistics Inc home"><img src="../assets/jct-logistics-inc-logo.png" width="81" height="52" alt="JCT Logistics Inc logo"></a>
+  <ul class="menu">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#who">Who We Serve</a></li>
+    <li><a href="#why">About</a></li>
+    <li><a href="#process">How It Works</a></li>
+    <li><a href="#quote">Contact</a></li>
+  </ul>
+  <div class="hdr-actions">
+    <a href="#quote" class="btn btn-y">Get a Quote</a>
+    <a href="https://app.extensiv.com/login" target="_blank" rel="noopener" class="btn btn-portal"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Client Portal Login</a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mnav"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+  </div>
+</div>
+<nav class="mnav" id="mnav" aria-label="Mobile">
+  <a href="#services">Services</a><a href="#who">Who We Serve</a><a href="#why">About</a><a href="#process">How It Works</a><a href="#quote">Contact</a>
+  <a href="#quote" class="btn btn-y">Get a Quote</a>
+</nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <video autoplay muted loop playsinline preload="metadata" poster="../assets/hero-poster.jpg" aria-hidden="true"><source src="../assets/hero-video.webm" type="video/webm"><source src="../assets/hero-video.mp4" type="video/mp4"></video>
+  <div class="wrap">
+    <span class="kicker rv">Ontario, CA &nbsp;·&nbsp; Serving businesses nationwide</span>
+    <h1 class="rv d1">Warehousing &amp; fulfillment, <span>handled with care.</span></h1>
+    <p class="rv d2">Businesses across the country trust JCT Logistics Inc with their inventory. Since 2015, we've earned that trust with a dedicated point of contact, quick answers, and careful handling of every shipment.</p>
+    <div class="hero-ctas rv d3">
+      <a href="#quote" class="btn btn-y">Request a Quote <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#services" class="btn btn-glass">Explore Services</a>
+    </div>
+    <div class="hero-foot rv d3">
+      <div><i></i>Dedicated point of contact</div>
+      <div><i></i>Quick, straight answers</div>
+      <div><i></i>Trusted since 2015</div>
+    </div>
+  </div>
+</section>
+
+<nav class="strip" aria-label="Services"><div class="wrap"><ul>
+  <li><a href="#s1"><span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></span>Amazon Fulfillment</a></li>
+  <li><a href="#s2"><span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M1 6h13v10H1z"/><path d="M14 9h4l4 4v3h-8z"/><circle cx="5.5" cy="18" r="2"/><circle cx="17.5" cy="18" r="2"/></svg></span>Transportation</a></li>
+  <li><a href="#s3"><span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v4M12 11.5L6.5 17M12 11.5l5.5 5.5"/></svg></span>Distribution</a></li>
+  <li><a href="#s4"><span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h13M12 3l4 4-4 4"/><path d="M21 17H8M12 13l-4 4 4 4"/></svg></span>Cross-Docking</a></li>
+  <li><a href="#s5"><span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span>Pick &amp; Pack</a></li>
+  <li><a href="#s6"><span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><path d="M17 14v6M14 17h6"/></svg></span>Kitting &amp; Assembly</a></li>
+</ul></div></nav>
+
+<section class="intro" id="who"><div class="wrap">
+  <div class="rv"><span class="kicker">Who we serve</span><h2>One partner for the way your products move.</h2></div>
+  <div class="body rv d1">
+    <p>Whether you sell online, bring in containers, or supply stores, JCT Logistics Inc sets up receiving, storage and shipping around <strong>your products, your channels and how you like to work</strong>.</p>
+    <p>Our Southern California hub sits close to the ports of Los Angeles and Long Beach, and we ship to customers, stores and marketplaces across the country.</p>
+  </div>
+</div></section>
+
+<section class="splits"><div class="wrap">
+  <article class="split rv" id="who-ecom">
+    <div class="media"><img src="../assets/hero-poster.jpg" alt="Cartons moving along a warehouse conveyor" loading="lazy"><span class="badge"><b>01</b>Ecommerce</span></div>
+    <div>
+      <span class="num">FOR AMAZON &amp; ECOMMERCE SELLERS</span>
+      <h3>Inventory received, prepped and ready to sell.</h3>
+      <p>We receive your inventory, prep and label it, and ship it out to Amazon fulfillment centers or straight to your customers, so you can focus on growing your store.</p>
+      <ul class="ticks"><li>Amazon fulfillment services</li><li>Pick, pack &amp; ship orders</li><li>Kitting, bundling &amp; labeling</li></ul>
+      <a href="#quote" class="textlink">Talk about ecommerce →</a>
+    </div>
+  </article>
+  <article class="split flip rv" id="who-import">
+    <div class="media"><img src="img/receiving.jpg" alt="Stacked cartons on a roller conveyor" loading="lazy"><span class="badge"><b>02</b>Import &amp; freight</span></div>
+    <div>
+      <span class="num">FOR IMPORTERS &amp; FREIGHT BROKERS</span>
+      <h3>A dependable next stop after the port.</h3>
+      <p>Inbound containers are unloaded, checked in and either stored or sorted and sent onward, with clear updates at every step so you always know where your freight stands.</p>
+      <ul class="ticks"><li>Cross-docking</li><li>Short- and long-term storage</li><li>Transportation management</li></ul>
+      <a href="#quote" class="textlink">Talk about import &amp; freight →</a>
+    </div>
+  </article>
+  <article class="split rv" id="who-mfg">
+    <div class="media"><img src="img/floor.jpg" alt="Warehouse floor with conveyor lines" loading="lazy"><span class="badge"><b>03</b>B2B &amp; retail</span></div>
+    <div>
+      <span class="num">FOR MANUFACTURERS &amp; RETAILERS</span>
+      <h3>Warehousing and distribution, off your plate.</h3>
+      <p>Hand off storage, order fulfillment and outbound distribution so your team can stay focused on making and selling. We ship retail, wholesale and B2B orders nationwide.</p>
+      <ul class="ticks"><li>Warehousing &amp; distribution</li><li>Retail &amp; B2B order fulfillment</li><li>Kitting &amp; assembly</li></ul>
+      <a href="#quote" class="textlink">Talk about B2B &amp; retail →</a>
+    </div>
+  </article>
+</div></section>
+
+<section class="services" id="services"><div class="wrap">
+  <div class="svc-head rv">
+    <div><span class="kicker">Services</span><h2>Everything between the port <br class="br-d">and your customer.</h2></div>
+    <p class="lead">Use one service or combine several. Every program is set up around your products, your channels and your requirements.</p>
+  </div>
+  <div class="rows">
+    <a href="#quote" class="row rv" id="s1"><span class="n">01</span><h3><small>Ecommerce</small>Amazon Fulfillment</h3><p>We receive, prep, label and ship your inventory to Amazon fulfillment centers so it arrives ready to sell.</p><span class="go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    <a href="#quote" class="row rv" id="s2"><span class="n">02</span><h3><small>Freight</small>Transportation Management</h3><p>We plan and coordinate inbound and outbound shipments to keep your freight moving on schedule.</p><span class="go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    <a href="#quote" class="row rv" id="s3"><span class="n">03</span><h3><small>B2B &amp; Retail</small>Distribution</h3><p>Storage and outbound distribution for retail, wholesale and B2B orders to customers nationwide.</p><span class="go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    <a href="#quote" class="row rv" id="s4"><span class="n">04</span><h3><small>Freight</small>Cross-Docking</h3><p>Freight is unloaded, sorted and reloaded for outbound delivery, so it spends less time sitting in storage.</p><span class="go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    <a href="#quote" class="row rv" id="s5"><span class="n">05</span><h3><small>Ecommerce</small>Pick &amp; Pack</h3><p>Orders are picked, packed and shipped accurately to your packaging and shipping requirements.</p><span class="go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    <a href="#quote" class="row rv" id="s6"><span class="n">06</span><h3><small>Value-added</small>Kitting &amp; Assembly</h3><p>We build bundles, multi-packs, gift sets and light assemblies to your spec, ready to ship.</p><span class="go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+  </div>
+</div></section>
+
+<section class="why" id="why"><div class="wrap">
+  <div class="stick rv">
+    <span class="kicker">Why JCT Logistics Inc</span>
+    <h2>Known for the way we <span>take care of customers.</span></h2>
+    <p class="lead">Since 2015, JCT Logistics Inc has built long-term relationships with businesses across the country. Those relationships come down to how we treat each customer and their inventory.</p>
+    <a href="#quote" class="btn btn-y" style="margin-top:34px">Start a Conversation <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+  <div class="pillars">
+    <div class="pillar rv"><span class="pi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><h3>A dedicated point of contact</h3><p>One person who knows your account from start to finish, so you never have to explain yourself twice.</p></div>
+    <div class="pillar rv d1"><span class="pi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><h3>Quick, straight answers</h3><p>When you call or email, you hear back from a real person who can give you a clear answer and keep you updated.</p></div>
+    <div class="pillar rv"><span class="pi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Care with your inventory</h3><p>Your inventory is your business. We handle, store and ship it with care so it arrives the way it should.</p></div>
+    <div class="pillar rv d1"><span class="pi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg></span><h3>Programs built around you</h3><p>We adapt receiving, packing, kitting and shipping to your requirements instead of forcing you into a template.</p></div>
+    <div class="pillar rv"><span class="pi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><h3>Nationwide reach</h3><p>From our Southern California hub, we ship to customers, stores and marketplaces across the country.</p></div>
+    <div class="pillar rv d1"><span class="pi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></span><h3>Relationships since 2015</h3><p>We've been serving businesses since 2015 and want to keep working with you for years to come.</p></div>
+  </div>
+</div></section>
+
+<section class="process" id="process"><div class="wrap">
+  <div class="head rv"><span class="kicker">How it works</span><h2>From first call to first shipment.</h2><p class="lead">Getting started is simple. We set everything up around your products and channels.</p></div>
+  <div class="timeline">
+    <div class="stp rv"><span class="dot">1</span><h3>Request a quote</h3><p>Tell us about your products, volumes and the services you need.</p></div>
+    <div class="stp rv d1"><span class="dot">2</span><h3>Plan your setup</h3><p>We review your requirements and propose a storage, handling and shipping plan with pricing.</p></div>
+    <div class="stp rv d2"><span class="dot">3</span><h3>Send inventory</h3><p>Ship containers, pallets or parcels to our Ontario, CA warehouse. We receive and check them in.</p></div>
+    <div class="stp rv d3"><span class="dot">4</span><h3>We fulfill &amp; ship</h3><p>Orders are picked, packed, kitted or cross-docked and sent to Amazon, stores or your customers.</p></div>
+  </div>
+</div></section>
+
+<section class="quote" id="quote"><div class="wrap">
+  <div class="quote-box rv">
+    <div class="qside">
+      <span class="kicker">Get a quote</span>
+      <h2>Tell us what you need to move.</h2>
+      <p>Share a few details and your point of contact will follow up with a tailored quote.</p>
+      <ul class="clist">
+        <li><span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><b>Warehouse</b><span>2130 S Haven Ave, Ontario, CA 91761</span></div></li>
+        <li><span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><div><b>Phone</b><a href="tel:+19099860886">(909) 986-0886</a></div></li>
+        <li><span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></span><div><b>Email</b><a href="mailto:info@jctlogisticsinc.com">info@jctlogisticsinc.com</a></div></li>
+        <li><span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span><div><b>Hours</b><span>Monday–Friday, 8:00 AM – 4:30 PM</span></div></li>
+      </ul>
+    </div>
+    <form class="qform" name="quote" method="POST" action="https://api.web3forms.com/submit">
+      <input type="hidden" name="access_key" value="cd8771b8-2bcb-424e-9549-710adba27203">
+      <input type="hidden" name="subject" value="New quote request - jctlogisticsinc.com">
+      <input type="hidden" name="from_name" value="JCT Logistics Inc website">
+      <input type="hidden" name="redirect" value="https://www.jctlogisticsinc.com/thanks.html">
+      <input type="hidden" name="services" id="svc-all" value="">
+      <p class="hp" aria-hidden="true"><label>Leave this empty: <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label></p>
+      <div class="g2">
+        <div class="f"><label for="n">Name</label><input id="n" name="name" autocomplete="name" placeholder="Jane Smith" required></div>
+        <div class="f"><label for="c">Company</label><input id="c" name="company" autocomplete="organization" placeholder="Company name"></div>
+        <div class="f"><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email" placeholder="you@company.com" required></div>
+        <div class="f"><label for="p">Phone</label><input id="p" name="phone" type="tel" autocomplete="tel" placeholder="(555) 555-5555"></div>
+      </div>
+      <div class="f"><label for="t">I am a…</label>
+        <select id="t" name="customer-type"><option>Amazon / ecommerce seller</option><option>Importer / freight broker</option><option>Manufacturer / retailer</option><option>Other</option></select></div>
+      <fieldset class="f"><legend>Services needed</legend>
+        <div class="chips"><label><input type="checkbox" class="svc-box" value="Amazon Fulfillment"><span>Amazon Fulfillment</span></label><label><input type="checkbox" class="svc-box" value="Transportation"><span>Transportation</span></label><label><input type="checkbox" class="svc-box" value="Distribution"><span>Distribution</span></label><label><input type="checkbox" class="svc-box" value="Cross-Docking"><span>Cross-Docking</span></label><label><input type="checkbox" class="svc-box" value="Pick & Pack"><span>Pick &amp; Pack</span></label><label><input type="checkbox" class="svc-box" value="Kitting & Assembly"><span>Kitting &amp; Assembly</span></label></div></fieldset>
+      <div class="f"><label for="m">Message</label><textarea id="m" name="message" rows="4" placeholder="Products, storage needs, destinations, timing…"></textarea></div>
+      <button class="btn btn-y" type="submit">Request My Quote <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <p class="fine">No obligation. We'll only use your info to respond to your request.</p>
+    </form>
+<script>document.querySelector('form[name="quote"]').addEventListener("submit",function(){document.getElementById("svc-all").value=[].map.call(document.querySelectorAll(".svc-box:checked"),function(b){return b.value}).join(", ")||"None selected";});</script>
+  </div>
+</div></section>
+
+<section class="cta"><div class="wrap">
+  <div class="rv"><h2>Prefer to talk it through?</h2><p>Call JCT Logistics Inc Monday–Friday, 8:00 AM – 4:30 PM, and you'll reach a real person who can help.</p></div>
+  <div class="cta-actions rv d1">
+    <a href="tel:+19099860886" class="btn btn-white"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>(909) 986-0886</a>
+    <a href="#quote" class="btn btn-glass">Request a Quote</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="ft">
+    <div>
+      <a href="#top" class="ft-logo" aria-label="JCT Logistics Inc home"><img src="../assets/jct-logistics-inc-logo.png" width="87" height="56" alt="JCT Logistics Inc logo"></a>
+      <p>Warehousing, fulfillment and distribution with personal service, from Ontario, CA, serving businesses nationwide since 2015.</p>
+      <a href="https://app.extensiv.com/login" target="_blank" rel="noopener" class="btn btn-glass ft-portal" style="padding:11px 20px;font-size:14px">Client Portal Login</a>
+    </div>
+    <div><h4>Services</h4><ul><li><a href="#s1">Amazon Fulfillment</a></li><li><a href="#s2">Transportation Management</a></li><li><a href="#s3">Distribution</a></li><li><a href="#s4">Cross-Docking</a></li><li><a href="#s5">Pick &amp; Pack</a></li><li><a href="#s6">Kitting &amp; Assembly</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="#who">Who We Serve</a></li><li><a href="#why">About</a></li><li><a href="#process">How It Works</a></li><li><a href="#quote">Get a Quote</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li>2130 S Haven Ave<br>Ontario, CA 91761</li><li><a href="tel:+19099860886">(909) 986-0886</a></li><li><a href="mailto:info@jctlogisticsinc.com">info@jctlogisticsinc.com</a></li><li>Monday–Friday, 8:00 AM – 4:30 PM</li></ul></div>
+  </div>
+  <div class="ft-bottom"><span>© 2026 JCT Logistics Inc. All rights reserved.</span><span>www.jctlogisticsinc.com</span></div>
+</div></footer>
+
+<script>
+(function(){
+var h=document.querySelector('.hdr'),b=h.querySelector('.burger');
+b.addEventListener('click',function(){var o=h.classList.toggle('open');b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Close menu':'Open menu');});
+h.querySelectorAll('.mnav a').forEach(function(a){a.addEventListener('click',function(){h.classList.remove('open');b.setAttribute('aria-expanded','false');});});
+addEventListener('scroll',function(){h.classList.toggle('scrolled',scrollY>8);},{passive:true});
+var v=document.querySelector('.hero video');if(v&&matchMedia('(prefers-reduced-motion: reduce)').matches){v.removeAttribute('autoplay');v.pause();}
+var els=document.querySelectorAll('.rv');
+if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
