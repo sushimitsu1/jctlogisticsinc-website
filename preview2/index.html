@@ -53,18 +53,23 @@ h1,h2,h3{font-family:var(--head);color:var(--ink);margin:0}
 .portal svg{flex:none}
 .mobile-menu{display:none;width:44px;height:44px;border:1px solid #d2dcd7;background:#fff;cursor:pointer;place-items:center;padding:0}
 
-/* Hero (B split, with original video) */
-.hero{background:var(--cream)}
-.hero-grid{display:grid;grid-template-columns:minmax(0,.98fr) minmax(0,1.02fr);min-height:580px;max-width:1540px;margin-inline:auto}
-.hero-copy{padding:76px clamp(24px,5.4vw,92px) 64px;display:flex;flex-direction:column;justify-content:center;max-width:720px;margin-left:auto;width:100%}
-.hero h1{font-size:clamp(42px,4.6vw,68px);font-weight:800;letter-spacing:-.045em;line-height:1.08;margin:22px 0 22px;max-width:600px}
+/* Hero: full-bleed original video with themed overlay */
+.hero{position:relative;overflow:hidden;isolation:isolate;min-height:min(88vh,860px);display:flex;align-items:center;background:#e9e6df url(../assets/hero-poster.jpg) center/cover no-repeat}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero-overlay{position:absolute;inset:0;z-index:-1}
+.hero--cream .hero-overlay{background:linear-gradient(90deg,rgba(245,243,238,.94) 0%,rgba(245,243,238,.9) 34%,rgba(245,243,238,.6) 58%,rgba(245,243,238,.3) 100%)}
+.hero--teal .hero-overlay{background:linear-gradient(90deg,rgba(23,56,51,.94) 0%,rgba(28,66,60,.86) 38%,rgba(31,74,67,.5) 66%,rgba(31,74,67,.25) 100%)}
+.hero-inner{position:relative;width:100%;padding-top:80px;padding-bottom:110px}
+.hero-copy{max-width:640px}
+.hero h1{font-size:clamp(44px,5.2vw,76px);font-weight:800;letter-spacing:-.045em;line-height:1.05;margin:22px 0 24px}
 .hero h1 span{color:var(--accent)}
-.hero p{font-size:17px;line-height:1.8;color:var(--muted);max-width:500px;margin:0 0 30px}
+.hero p{font-size:18px;line-height:1.8;color:#4f5d57;max-width:540px;margin:0 0 32px}
 .hero-buttons{display:flex;gap:12px;flex-wrap:wrap}
-.hero-media{position:relative;min-height:580px;overflow:hidden;background:#2a4844 url(../assets/hero-poster.jpg) center/cover no-repeat}
-.hero-media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,45,40,0) 55%,rgba(20,45,40,.35))}
-.hero-label{position:absolute;left:24px;bottom:24px;z-index:2;display:flex;gap:14px;align-items:center;background:#fff;padding:14px 18px 14px 14px;max-width:330px;box-shadow:0 18px 40px -20px rgba(10,30,26,.55)}
+.hero--cream .btn--stroke{background:rgba(255,255,255,.55)}
+.hero--teal h1,.hero--teal .kicker{color:#fff}.hero--teal h1 span{color:#9fd0c3}.hero--teal .kicker::before{background:#9fd0c3}
+.hero--teal p{color:#d5e2dc}
+.hero--teal .btn--solid{background:#fff;color:var(--deep)}.hero--teal .btn--stroke{border-color:rgba(255,255,255,.5);color:#fff}
+.hero-label{position:absolute;right:clamp(20px,4.2vw,56px);bottom:40px;display:flex;gap:14px;align-items:center;background:#fff;padding:14px 18px 14px 14px;max-width:340px;box-shadow:0 18px 40px -20px rgba(10,30,26,.55)}
 .hero-label i{flex:none;width:40px;height:40px;display:grid;place-items:center;background:var(--deep);color:#fff;font-style:normal}
 .hero-label strong{display:block;font-family:var(--head);font-size:14.5px;letter-spacing:-.01em}
 .hero-label small{display:block;font-size:13px;color:var(--muted);line-height:1.45}
@@ -191,9 +196,6 @@ fieldset.field legend{padding:0;margin-bottom:10px}
   .nav .m-only{display:flex;margin-top:14px;border-bottom:0;padding:12px 20px;color:#fff}
   .nav-actions{margin-left:auto}
   .mobile-menu{display:grid}
-  .hero-grid{grid-template-columns:1fr}
-  .hero-copy{max-width:none;margin:0;padding:56px 6% 46px}
-  .hero-media{min-height:400px;height:400px}
   .cap-grid,.why-grid,.contact-layout{grid-template-columns:1fr}
   .cap-image{height:380px}
   .team-photo{height:420px}
@@ -211,12 +213,14 @@ fieldset.field legend{padding:0;margin-bottom:10px}
   .nav-actions .hq{display:none}
   .nav-actions .btn{font-size:13.5px;padding:8px 12px}
   .mobile-menu{width:40px;height:40px}
-  .hero-copy{padding:44px 20px 40px}
+  .hero{min-height:80vh;align-items:flex-start}
+  .hero-inner{padding-top:48px;padding-bottom:150px}
+  .hero--cream .hero-overlay{background:linear-gradient(180deg,rgba(245,243,238,.95) 0%,rgba(245,243,238,.9) 62%,rgba(245,243,238,.62) 100%)}
+  .hero--teal .hero-overlay{background:linear-gradient(180deg,rgba(23,56,51,.94) 0%,rgba(28,66,60,.86) 62%,rgba(31,74,67,.6) 100%)}
+  .hero-label{left:20px;right:20px;bottom:20px;max-width:none}
   .hero h1{font-size:40px;letter-spacing:-.04em}
   .hero p{font-size:16px}
   .hero-buttons .btn{flex:1 1 100%}
-  .hero-media{height:300px;min-height:300px}
-  .hero-label{left:14px;right:14px;bottom:14px;max-width:none}
   .valuebar{grid-template-columns:1fr}
   .valuebar div{padding:13px 20px}
   .valuebar div+div{border-left:0;border-top:1px solid #bfcdc4}
@@ -255,18 +259,19 @@ fieldset.field legend{padding:0;margin-bottom:10px}
 </div></header>
 
 <main id="top">
-<section class="hero"><div class="hero-grid">
-  <div class="hero-copy">
-    <div class="kicker rv">Ontario, CA · Serving businesses nationwide</div>
-    <h1 class="rv d1">A warehouse partner who <span>moves at your pace.</span></h1>
-    <p class="rv d2">Businesses across the country trust JCT Logistics Inc with their inventory. Since 2015, we've earned that trust with a dedicated point of contact, quick answers, and careful handling of every shipment.</p>
-    <div class="hero-buttons rv d2"><a class="btn btn--solid" href="#contact">Let's talk logistics <span class="ar">↗</span></a><a class="btn btn--stroke" href="#services">See what we handle <span class="ar">→</span></a></div>
+<section class="hero hero--teal">
+  <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="../assets/hero-poster.jpg" aria-hidden="true"><source src="../assets/hero-video.webm" type="video/webm"><source src="../assets/hero-video.mp4" type="video/mp4"></video>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="shell hero-inner">
+    <div class="hero-copy">
+      <div class="kicker rv">Ontario, CA · Serving businesses nationwide</div>
+      <h1 class="rv d1">A warehouse partner who <span>moves at your pace.</span></h1>
+      <p class="rv d2">Businesses across the country trust JCT Logistics Inc with their inventory. Since 2015, we've earned that trust with a dedicated point of contact, quick answers, and careful handling of every shipment.</p>
+      <div class="hero-buttons rv d2"><a class="btn btn--solid" href="#contact">Let's talk logistics <span class="ar">↗</span></a><a class="btn btn--stroke" href="#services">See what we handle <span class="ar">→</span></a></div>
+    </div>
+    <div class="hero-label rv d2"><i>↗</i><div><strong>Real people. Practical solutions.</strong><small>A dedicated point of contact from first call to final shipment.</small></div></div>
   </div>
-  <div class="hero-media">
-    <video autoplay muted loop playsinline preload="metadata" poster="../assets/hero-poster.jpg" aria-hidden="true"><source src="../assets/hero-video.webm" type="video/webm"><source src="../assets/hero-video.mp4" type="video/mp4"></video>
-    <div class="hero-label"><i>↗</i><div><strong>Real people. Practical solutions.</strong><small>A dedicated point of contact from first call to final shipment.</small></div></div>
-  </div>
-</div></section>
+</section>
 <div class="valuebar-wrap"><div class="valuebar">
   <div><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Responsive communication</div>
   <div><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>Flexible programs</div>
@@ -378,7 +383,7 @@ n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(
 addEventListener('scroll',function(){h.classList.toggle('scrolled',scrollY>6)},{passive:true});
 document.querySelectorAll('[data-client]').forEach(function(a){a.addEventListener('click',function(){document.getElementById('t').value=a.dataset.client;});});
 document.querySelectorAll('[data-service]').forEach(function(a){a.addEventListener('click',function(){document.querySelectorAll('.svc-box').forEach(function(b){if(b.value===a.dataset.service)b.checked=true;});});});
-var v=document.querySelector('.hero-media video');if(v&&matchMedia('(prefers-reduced-motion: reduce)').matches){v.removeAttribute('autoplay');v.pause();}
+var v=document.querySelector('.hero-video');if(v&&matchMedia('(prefers-reduced-motion: reduce)').matches){v.removeAttribute('autoplay');v.pause();}
 var els=document.querySelectorAll('.rv');
 if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
 var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1,rootMargin:'0px 0px -30px 0px'});
