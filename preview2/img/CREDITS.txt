@@ -1,0 +1,26 @@
+Photo credits for /preview2/
+All photos are free for commercial use, no attribution required.
+Pexels License: https://www.pexels.com/license/
+Files were cropped, resized and recompressed locally (no hotlinking).
+
+ecommerce-parcels.jpg  (Who we help: Amazon & ecommerce sellers)
+  Source: https://www.pexels.com/photo/4487360/  "Men Carrying Parcels in a Warehouse"
+  Photographer: Tiger Lily (Pexels) | License: Pexels License
+
+import-forklift-truck.jpg  (Who we help: importers & freight brokers)
+  Source: https://www.pexels.com/photo/34585120/  "Forklift Operators Loading Pallets on Truck"
+  Photographer: Caleb Oquendo (Pexels) | License: Pexels License
+
+mfg-warehouse.jpg  (Who we help: manufacturers & retailers)
+  Source: https://www.pexels.com/photo/industrial-warehouse-with-forklift-and-shelving-36398150/
+  Photographer: Willians Huerta (Pexels) | License: Pexels License
+
+services-team-overhead.jpg  (Services)
+  Source: https://www.pexels.com/photo/4481260/  "Men Working in a Warehouse"
+  Photographer: Tiger Lily (Pexels) | License: Pexels License
+
+team-inventory-check.jpg  (Why us / real team)
+  Source: https://www.pexels.com/photo/4481258/  "Men Working in a Warehouse"
+  Photographer: Tiger Lily (Pexels) | License: Pexels License
+
+Hero video and logo: JCT Logistics Inc's own assets (../assets/).
