@@ -1,0 +1,19 @@
+Photo credits for /preview/ "Who we serve" section
+All photos are free for commercial use with no attribution required
+(Pexels License: https://www.pexels.com/license/ ; Unsplash License: https://unsplash.com/license).
+Files were cropped/resized to 1600px wide and recompressed.
+
+ecommerce-parcels.jpg  (For Amazon & ecommerce sellers)
+  Source: https://www.pexels.com/photo/close-up-photo-of-stacked-carton-boxes-6170154/
+  Photographer: Tima Miroshnichenko (Pexels)
+  License: Pexels License
+
+import-loading-dock.jpg  (For importers & freight brokers)
+  Source: https://unsplash.com/photos/man-carrying-box-using-fork-liftr-GAdkOpqbTfo
+  Photographer: Elevate (@elevatebeer, Unsplash)
+  License: Unsplash License
+
+mfg-warehouse-forklift.jpg  (For manufacturers & retailers)
+  Source: https://www.pexels.com/photo/industrial-warehouse-with-forklift-and-shelving-36398150/
+  Photographer: Willians Huerta (Pexels)
+  License: Pexels License
