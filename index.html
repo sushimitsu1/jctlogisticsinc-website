@@ -361,11 +361,13 @@ fieldset.svc{border:0;padding:0;margin:0 0 8px}fieldset.svc legend{font-weight:6
       <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0b1f3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span><div><b>Hours</b><span>Monday–Friday, 8:00 AM – 4:30 PM</span></div></li>
     </ul>
   </div>
-  <form class="card" name="quote" method="POST" action="https://formsubmit.co/service@jctlogisticsinc.com">
-    <input type="hidden" name="_subject" value="New quote request - jctlogisticsinc.com">
-    <input type="hidden" name="_next" value="https://www.jctlogisticsinc.com/thanks.html">
-    <input type="hidden" name="_template" value="table">
-    <p class="hp" aria-hidden="true"><label>Leave this empty: <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
+  <form class="card" name="quote" method="POST" action="https://api.web3forms.com/submit">
+    <input type="hidden" name="access_key" value="cd8771b8-2bcb-424e-9549-710adba27203">
+    <input type="hidden" name="subject" value="New quote request - jctlogisticsinc.com">
+    <input type="hidden" name="from_name" value="JCT Logistics Inc website">
+    <input type="hidden" name="redirect" value="https://www.jctlogisticsinc.com/thanks.html">
+    <input type="hidden" name="services" id="svc-all" value="">
+    <p class="hp" aria-hidden="true"><label>Leave this empty: <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label></p>
     <div class="grid2">
       <div class="field"><label for="n">Name</label><input id="n" name="name" autocomplete="name" placeholder="Jane Smith" required></div>
       <div class="field"><label for="c">Company</label><input id="c" name="company" autocomplete="organization" placeholder="Company name"></div>
@@ -375,11 +377,12 @@ fieldset.svc{border:0;padding:0;margin:0 0 8px}fieldset.svc legend{font-weight:6
     <div class="field"><label for="t">I am a…</label>
       <select id="t" name="customer-type"><option>Amazon / ecommerce seller</option><option>Importer / freight broker</option><option>Manufacturer / retailer</option><option>Other</option></select></div>
     <fieldset class="field svc"><legend>Services needed</legend>
-    <div class="checks"><label><input type="checkbox" name="services" value="Amazon Fulfillment">Amazon Fulfillment</label><label><input type="checkbox" name="services" value="Transportation">Transportation</label><label><input type="checkbox" name="services" value="Distribution">Distribution</label><label><input type="checkbox" name="services" value="Cross-Docking">Cross-Docking</label><label><input type="checkbox" name="services" value="Pick & Pack">Pick &amp; Pack</label><label><input type="checkbox" name="services" value="Kitting & Assembly">Kitting &amp; Assembly</label></div></fieldset>
+    <div class="checks"><label><input type="checkbox" class="svc-box" value="Amazon Fulfillment">Amazon Fulfillment</label><label><input type="checkbox" class="svc-box" value="Transportation">Transportation</label><label><input type="checkbox" class="svc-box" value="Distribution">Distribution</label><label><input type="checkbox" class="svc-box" value="Cross-Docking">Cross-Docking</label><label><input type="checkbox" class="svc-box" value="Pick & Pack">Pick &amp; Pack</label><label><input type="checkbox" class="svc-box" value="Kitting & Assembly">Kitting &amp; Assembly</label></div></fieldset>
     <div class="field"><label for="m">Message</label><textarea id="m" name="message" rows="4" placeholder="Products, storage needs, destinations, timing…"></textarea></div>
     <button class="btn btn-accent" type="submit">Request My Quote →</button>
     <p class="fine">No obligation. We'll only use your info to respond to your request.</p>
   </form>
+<script>document.querySelector('form[name="quote"]').addEventListener("submit",function(){document.getElementById("svc-all").value=[].map.call(document.querySelectorAll(".svc-box:checked"),function(b){return b.value}).join(", ")||"None selected";});</script>
 </div></section>
 
 <footer><div class="container">
