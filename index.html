@@ -7,9 +7,10 @@
 <meta name="description" content="JCT Logistics Inc provides warehousing, Amazon fulfillment, distribution, cross-docking, pick &amp; pack, and kitting from Ontario, CA, serving businesses nationwide since 2015.">
 <link rel="canonical" href="https://www.jctlogisticsinc.com/">
 <meta name="theme-color" content="#f7f7f2">
-<link rel="icon" href="assets/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico?v=2" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=2">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=2">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="JCT Logistics Inc">
 <meta property="og:title" content="JCT Logistics Inc | Warehousing &amp; Fulfillment in Ontario, CA">
@@ -26,7 +27,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
 <script>document.documentElement.className+=' js';</script>
 <style>
-:root{--ink:#1e302f;--deep:#1f4a43;--deep-2:#1c3331;--accent:#336b65;--sage:#dce5df;--sage-2:#e8eee9;--sage-dot:#578f81;--muted:#64716b;--line:#dbe1db;--cream:#f7f7f2;--cream-2:#f3f5ef;--max:1240px;
+:root{--orange:#e8742c;--orange-hi:#f08a47;--charcoal:#22252b;--ink:#1e302f;--deep:#1f4a43;--deep-2:#1c3331;--accent:#336b65;--sage:#dce5df;--sage-2:#e8eee9;--sage-dot:#578f81;--muted:#64716b;--line:#dbe1db;--cream:#f7f7f2;--cream-2:#f3f5ef;--max:1240px;
 --sans:'DM Sans','Segoe UI',Arial,sans-serif;--head:'Plus Jakarta Sans','Segoe UI',Arial,sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:90px}
@@ -44,7 +45,7 @@ h1,h2,h3{font-family:var(--head);color:var(--ink);margin:0}
 .lede{color:var(--muted);font-size:16.5px;line-height:1.8}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 20px;border:1px solid transparent;font-weight:700;font-size:15px;white-space:nowrap;cursor:pointer;transition:background .18s,border-color .18s,color .18s,transform .18s}
 .btn .ar{transition:transform .18s}.btn:hover .ar{transform:translate(2px,-2px)}
-.btn--solid{background:var(--deep);color:#fff}.btn--solid:hover{background:#2c6158}
+.btn--solid{background:var(--orange);color:var(--charcoal)}.btn--solid:hover{background:var(--orange-hi)}
 .btn--stroke{border-color:#c4cfc8;color:var(--deep);background:transparent}.btn--stroke:hover{background:#eef3ef;border-color:var(--deep)}
 .btn--white{background:#fff;color:var(--deep)}.btn--white:hover{background:#eef3ef}
 .btn--ghost{border-color:rgba(255,255,255,.4);color:#fff}.btn--ghost:hover{background:rgba(255,255,255,.08)}
@@ -54,7 +55,7 @@ h1,h2,h3{font-family:var(--head);color:var(--ink);margin:0}
 .header.scrolled{box-shadow:0 8px 24px -18px rgba(20,45,40,.5)}
 .header-inner{min-height:84px;display:flex;align-items:center;gap:26px}
 .brand{flex:none;display:flex;align-items:center}
-.brand img{height:56px;width:auto}
+.brand img{height:48px;width:auto}.brand .brand-compact{display:none}
 .nav{display:flex;gap:28px;margin-left:auto;font-weight:600;font-size:15px}
 .nav a{position:relative;padding:4px 0}
 .nav a::after{content:"";position:absolute;left:0;right:100%;bottom:-2px;height:2px;background:var(--accent);transition:right .2s}
@@ -180,8 +181,8 @@ fieldset.field legend{padding:0;margin-bottom:10px}
 /* Footer (B, expanded) */
 .footer{background:var(--deep-2);color:#cfdcd4;padding-top:64px}
 .footer-top{display:grid;grid-template-columns:1.4fr 1fr 1.2fr;gap:48px;padding-bottom:44px}
-.chip{display:inline-block;background:#fff;padding:10px 14px;border-radius:12px;margin-bottom:18px}
-.chip img{height:54px;width:auto}
+.flogo{display:inline-block;margin-bottom:22px}
+.flogo img{height:44px;width:auto}
 .footer p{font-size:15px;line-height:1.7;color:#aec4b7;max-width:400px;margin:0}
 .footer h4{font-family:var(--head);color:#fff;font-size:15px;margin:0 0 16px}
 .footer ul{list-style:none;padding:0;margin:0;display:grid;gap:10px;font-size:15px}
@@ -219,7 +220,7 @@ fieldset.field legend{padding:0;margin-bottom:10px}
 @media (max-width:640px){
   .shell{padding-inline:20px}
   .header-inner{gap:8px;min-height:68px}
-  .brand img{height:42px}
+  .brand .brand-full{display:none}.brand .brand-compact{display:block;height:36px}
   .nav-actions{gap:6px}
   .nav-actions .btn{min-height:40px;padding:8px 10px;font-size:13px;gap:6px}
   .nav-actions .hq{display:none}
@@ -252,12 +253,12 @@ fieldset.field legend{padding:0;margin-bottom:10px}
   .fields{grid-template-columns:1fr}
   .footer-top{grid-template-columns:1fr;gap:34px}
 }
-@media (max-width:380px){.nav-actions .btn{padding:8px 8px;font-size:12.5px}.brand img{height:38px}}
+@media (max-width:380px){.nav-actions .btn{padding:8px 8px;font-size:12.5px}.brand .brand-compact{height:34px}}
 </style>
 </head>
 <body>
 <header class="header" id="hdr"><div class="shell header-inner">
-  <a href="#top" class="brand" aria-label="JCT Logistics Inc home"><img src="assets/jct-logistics-inc-logo.png" width="87" height="56" alt="JCT Logistics Inc logo"></a>
+  <a href="#top" class="brand" aria-label="JCT Logistics Inc home"><img class="brand-full" src="/assets/logo/jct-logistics-inc-header.svg" width="309" height="48" alt="JCT Logistics Inc"><img class="brand-compact" src="/assets/logo/jct-logistics-inc-compact.svg" width="106" height="36" alt="JCT Logistics Inc"></a>
   <nav class="nav" id="nav" aria-label="Main">
     <a href="#who">Who we help</a><a href="#services">Services</a><a href="#why">Why us</a><a href="#contact">Contact</a>
     <a href="#contact" class="m-only btn btn--solid">Get a quote <span class="ar">→</span></a>
@@ -375,7 +376,7 @@ fieldset.field legend{padding:0;margin-bottom:10px}
 <footer class="footer"><div class="shell">
   <div class="footer-top">
     <div>
-      <a href="#top" class="chip" aria-label="JCT Logistics Inc home"><img src="assets/jct-logistics-inc-logo.png" width="84" height="54" alt="JCT Logistics Inc logo"></a>
+      <a href="#top" class="flogo" aria-label="JCT Logistics Inc home"><img src="/assets/logo/jct-logistics-inc-footer.svg" width="283" height="44" alt="JCT Logistics Inc"></a>
       <p>Warehousing, fulfillment and distribution from Ontario, CA, serving businesses nationwide since 2015.</p>
       <a class="btn btn--ghost" href="https://app.extensiv.com/login" target="_blank" rel="noopener">Client Portal Login</a>
     </div>
